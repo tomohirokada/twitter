@@ -1,44 +1,20 @@
+<div class="container">
 <section class="main-header">
-    <img src="<%= asset_path "toppage.jpg" %>">
+<center>
+  <a href="tweets/new"><img src="<%= asset_path "logo.png" %>"></a>
+</center>
 </section>
 <div id="page-top-btn" class="page-top-btn">
     <p><a class="move-page-top" id="move-page-top">▲</a></p>
 </div>
 <section class="about">
-  <h1>About Twitter</h1>
+  <h1>Twitter へようこそ</h1>
   <p>
      Twitterは、つぶやきを通じて繋がるSNSアプリです。<br>
      普段の気持ちをつぶやいたり、フォロワーとのメッセージで多くの人と繋がりましょう。
+     <li><%= link_to "つぶやいてみる", new_tweet_path, class: 'btn btn-default btn-block'%></li><br>
+     <li><%= link_to "つぶやきをみる", tweets_path, class: 'btn btn-default btn-block' %></li>
   </p>
 </section>
- <section class="function container-fluid">
-    <div class="row">
-    <h2>Function</h2>
-      <div class="function-images">
-        <div class="col-md-3 col-sm-6">
-          <div class="function-image">
-            <img src="<%= asset_path "key.png" %>">
-            <p>ログイン機能</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="function-image">
-            <img src="<%= asset_path "mails.png" %>">
-            <p>メッセージ送信機能</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="function-image">
-            <img src="<%= asset_path "girls.png" %>">
-            <p>友達フォロー機能</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="function-image">
-            <img src="<%= asset_path "comment.png" %>">
-            <p>つぶやき投稿機能</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+</br>
+</div>
